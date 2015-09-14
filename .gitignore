@@ -3,5 +3,5 @@ _drafts
 .sass-cache
 .DS_Store
 config
-*.sublime-worksspace
+*.sublime-workspace
 *.sublime-project
