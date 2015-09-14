@@ -1,0 +1,94 @@
+.portfolio {
+  @include clearfix;
+  background: rgb(243, 246, 249);
+  padding: modular-scale(1rem, 3, $major-third); 
+  text-align: center;
+
+  .container {
+    max-width: 1200px;
+  }
+
+  &-intro {
+    text-align: center;
+    a {
+      color: $red;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }  
+
+
+  &-item {
+    margin-bottom: modular-scale(1rem, 5, $major-third); 
+    h2 {
+      margin-bottom: 0;
+      font-size: modular-scale(1rem, 2, $major-third); 
+    }
+    p {
+      margin-top: 0;
+      font-size: modular-scale(1rem, -1, $major-third);
+      font-style: italic;
+    }        
+  }
+
+  &-skills {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    margin-bottom: modular-scale(1rem, 1, $major-third);
+    color: #777;
+    li {
+      display: inline;
+      font-size: modular-scale(1rem, -1, $major-third);
+      &:after {
+        content: " | "
+      }
+      &:last-child:after {
+        content: "";
+      }
+    }
+  }
+
+  &-link {
+    position: relative;
+  }
+
+  &-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s;
+    &.active {
+      opacity: 1;
+    }
+    a {
+      font-family: 'brandon-grotesque-1', 'brandon-grotesque-2';
+      transition: .3s;
+      font-size: modular-scale(1rem, 3, $major-third);
+      color: #fff;
+      padding: modular-scale(1rem, 2, $major-third);
+      background: rgb(0,0,0);  
+      font-weight: bold;              
+    }
+  }
+
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: fontAwesome;
+  transition: .3s;
+  color: #000;
+}
+
+.slick-next:before {
+  content: "\f138";
+}
+
+.slick-prev:before {
+  content: "\f137";
+}
+
+

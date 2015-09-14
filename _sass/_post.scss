@@ -1,0 +1,55 @@
+h1.post-title {
+  margin: 0;
+  padding: modular-scale(1rem,   10, $major-third) 0;
+  font-size: modular-scale(1rem,   4, $major-third);
+}
+
+.post-header {
+    padding: 1em;
+}
+
+.post-meta {
+  margin: 0;
+  font-style: italic;
+  font-size: modular-scale(1rem, 0, $major-third);
+  color: #666;
+}
+
+.post-content {
+  padding-bottom: modular-scale(1rem, 3, $major-third);
+    a {
+      background: rgba(255, 255, 0, 0.27);
+    &:hover {
+      background: rgba(255, 255, 0, 1)
+    }
+  }
+}
+
+.goals {
+  background: rgba(181, 191, 202, 0.15);
+  padding: 2rem;
+  ul {
+    padding-left: 0;
+  }
+  li {
+    list-style: none;
+    &:before {
+      font-family: FontAwesome;
+      content: '\f00c';
+      color: #3DB543;
+      margin-right: 10px;
+    }
+  }
+}
+
+.post-file-name {
+  color: #999;
+  text-align: right;
+  font-size: 1rem;
+}
+
+.how-to-make-a-google-chrome-extension__chrome-web-store {
+  float: right;
+  margin-right: -450px;
+  margin-left: 20px;
+}

@@ -1,0 +1,29 @@
+.alert-box {
+  background: #F7CA18;
+  border-radius: 3px;
+  font-family: 'brandon-grotesque-1', 'brandon-grotesque-2';
+  margin: 3rem 0;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  input {
+    font-size: 1rem;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 3px;
+    text-align: center;
+    opacity: .5;
+    border: 0;
+    transition: .3s;
+    &:hover {
+      opacity: .8;
+    }
+    &:focus {
+      opacity: 1;
+      outline: 0;
+      box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+    }
+  }
+  img {
+    float: left; margin-right: 2rem;
+  }
+}

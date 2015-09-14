@@ -1,0 +1,363 @@
+  html {
+  font-size: 12px;
+  @media screen and (min-width: 700px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1000px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 18px;
+  }
+}
+
+html.contact {
+  height: 100%; }
+
+html.contact body {
+  background: #22313F;
+  height: 100%;
+  transition: .5s; }
+
+body {
+  font-family: "skolar-1","skolar-2";
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  // background: url('/img/background.png') no-repeat fixed center center;
+  // @include prefixer(background-size, cover, webkit moz spec);
+  -moz-font-feature-settings: "liga=1, dlig=1";
+    -ms-font-feature-settings: "liga", "dlig";
+    -webkit-font-feature-settings: "liga", "dlig";
+    -o-font-feature-settings: "liga", "dlig";
+    font-feature-settings: "liga", "dlig";
+    overflow-x: hidden;
+}
+
+#logo {
+  background: #fff139;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: .25em;
+}
+
+.container {
+  max-width: 41.25em;
+  margin: 0 auto;
+  padding: 0 1rem;
+  @media screen and (min-width: 41.25em) {
+    padding: 0;
+  }
+}
+
+$blue:  #22313F;
+$red:   #E74C3C;
+
+h1, h2, h3, p.intro {
+  text-rendering: optimizeLegibility;
+}
+
+p,
+ul,
+ol {
+  font-size: modular-scale(1rem,   1, $major-third);
+}
+
+ul,
+ol {
+  margin-left: 25px;
+}
+
+.post-content .intro {
+  font-size: modular-scale(1rem, 2, $major-third);
+  color: #666;
+}
+
+h4 {
+  font-size: modular-scale(1rem,   1, $major-third);
+}
+h3 {
+  font-size: modular-scale(1rem,   2, $major-third);
+}
+h2 {
+  font-size: modular-scale(1rem,   3, $major-third);
+}
+h1 {
+  font-size: modular-scale(1rem,   7, $major-third);
+  line-height: 1.2;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'brandon-grotesque-1', 'brandon-grotesque-2';
+}
+
+a {
+  transition: .3s;
+  color: $blue;
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.slick-slider {
+  margin-bottom: 0 !important;
+}
+
+table {
+  width: 100%;
+  font-size: modular-scale(1rem, 0, $major-third);
+  font-family: 'brandon-grotesque-1', 'brandon-grotesque-2';
+  border: 1px solid #eee;
+  border-radius: 2px;
+  thead {
+    background: #95a5a6;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: modular-scale(1rem, -1, $major-third);
+    letter-spacing: 0.05rem;
+    td {
+      padding: modular-scale(1rem, 1, $major-third) 1rem;
+    }
+  }
+  td {
+    padding: .5rem;
+    border-bottom: 1px solid #eee;
+  }
+  tbody tr {
+    &:hover {
+      background: #eee;
+    }
+  }
+}
+
+table {
+  display: block;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  td {
+    width: 100%;
+  }
+}
+
+
+::selection,
+::-moz-selection {
+  background: #E74C3C;
+}
+
+.highlight pre code {
+  @media screen and (min-width: 998px) {
+    font-size: modular-scale(1rem, -1, $major-third) 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.clearfix {
+  @extend .clearfix;
+}
+
+
+
+.visit-website {
+  border: 3px solid #000;
+  margin: 1rem 0;
+  display: inline-block;
+  padding: .5rem 2rem;
+  font-style: italic;
+  &:hover {
+    border-bottom: 5px solid #000;
+  }
+}
+
+
+.gallery-heading {
+  @media screen and (min-width: 925px) {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+.wildlands-league {
+
+}
+
+.wildlands-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  // padding: 0 modular-scale(1rem, 2, $major-third) 1rem;
+}
+
+.wildlands-intro {
+  margin: modular-scale(1rem, 7, $major-third) 0;
+}
+
+.wildlands .intro {
+  // change class
+  margin-bottom: modular-scale(1rem, 3, $major-third) 1rem;
+
+}
+
+.wildlands-intro-heading {
+  margin-top: 0;
+  text-align: center;
+}
+
+.wildlands-intro-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.wildlands-league-wireframes {
+
+  max-width: 60%;
+  float: right;
+
+  img {
+
+  }
+
+}
+
+.wildlands-process {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: modular-scale(1rem, 7, $major-third);
+}
+
+.wildlands-gallery {
+    @extend .clearfix;
+}
+
+.wildlands-gallery-text {
+  width: 40%;
+  float: right;
+  padding: modular-scale(1rem, 4, $major-third);
+  h3 {
+    margin-top: 0;
+  }
+}
+
+.wildlands-gallery-images {
+  background: rgba(165, 168, 67, 0.75);
+  color: #fff;
+  padding: 3rem;
+  max-width: 60%;
+  margin: 0 auto;
+  float: left;
+  .row {
+    @extend .clearfix;
+  }
+  img {
+    max-width: 33.33%;
+    float: left;
+  }
+}
+
+
+.wildlands-responsive {
+  @extend .clearfix;
+  text-align: center;
+  margin-bottom: modular-scale(1rem, 7, $major-third);
+  background: rgba(18, 45, 76, 0.87);
+  color: #fff;
+  padding-top: modular-scale(1rem, 2, $major-third);
+  p {
+    margin-bottom: modular-scale(1rem, 2, $major-third);
+  }
+  h3 {
+    margin: 0;
+  }
+  img {
+    max-width: 20%;
+    float: left;
+    margin: 0;
+    opacity: .2;
+  }
+  .active {
+    opacity: 1;
+  }
+}
+
+.wildlands-tasks {
+  max-width: 40%;
+  float: left;
+  .wildlands-tasks-heading {
+    margin-top: 0;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    // transform: translateX(-1000px);
+    &.appear {
+      @for $i from 1 through 4 {
+        &:nth-child( #{$i} ) {
+          -webkit-animation: slide-in 1s #{$i * 0.25}s ease 1 forwards;
+        }
+      }
+    }
+  }
+}
+
+
+
+.wildlands-wordpress-logo {
+  max-width: 14rem;
+  float: right;
+  margin: 0 0 1rem 1rem;
+}
+
+@-webkit-keyframes slide-in {
+    0% {transform: translateX(-1000px);}
+    100% {transform: translateX(0);}
+}
+
+
+
+.civiclive {
+    max-width: 35rem;
+    margin: 0 auto;
+    a {
+      color: $red;
+    }
+}
+
+.civiclive-gallery {
+  margin-top: 1rem;
+  img {
+    max-width: 150px;
+  }
+}

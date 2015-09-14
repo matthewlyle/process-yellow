@@ -1,0 +1,7 @@
+_site
+_drafts
+.sass-cache
+.DS_Store
+config
+*.sublime-worksspace
+*.sublime-project

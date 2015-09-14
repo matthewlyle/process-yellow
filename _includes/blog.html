@@ -1,0 +1,25 @@
+<div>
+  <section class="latest-article">
+    <div class="container">
+      <p class="section-title">Latest Articles</p>
+      {% for post in site.posts limit: 100 %}
+      <div class="article-container">
+        <h3><a href="{{ post.url }}">{{post.title}}</a></h3>
+        {{ post.excerpt }}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  <!--
+  <section class="more-articles">
+    <div class="container">
+      <p class="section-title">More Articles</p>
+      <ol class="post-list">
+        {% for post in site.posts limit: 5 offset: 2 %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+-->
+</div>

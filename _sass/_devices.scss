@@ -1,0 +1,52 @@
+
+.browser {
+  overflow: hidden;
+  border: 20px solid #333;
+  border-radius: 10px;
+  margin-bottom: 2rem;  
+  position: relative;
+}
+
+.browser-url {
+  font-family: 'brandon-grotesque-1', 'brandon-grotesque-2';
+    width: 100%;
+    line-height: 1;
+    padding: 10px 0;
+    color: #ddd;
+    font-size: .85rem;
+    background: #555;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    left: 0; 
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.browser-image {
+  position: relative;
+}
+
+.browser-loader {
+  color: rgba(0,0,0,.5);
+  font-size: 400px;
+  position: absolute;
+  display: block;
+  top: 60px;
+  width: 100%;
+  text-align: center;
+  -webkit-animation-name: hideloader; 
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards; 
+  display: none; 
+}
+
+
+.phone {
+  height: 700px;
+  width: 420px;
+  overflow: hidden;  
+  border: 20px solid #333;
+  border-radius: 10px;
+}

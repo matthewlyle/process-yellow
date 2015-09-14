@@ -1,0 +1,46 @@
+.site-header {
+  background: $red;
+  padding: .65rem 0;
+  overflow: hidden;
+  border-bottom: 1px solid lighten($red, 7%);
+  text-align: center;
+  a {
+    color: #fff;
+    font-size: modular-scale(1rem,   1, $major-third);   
+    font-family: 'brandon-grotesque-1', 'brandon-grotesque-2';
+    font-weight: bold;
+    letter-spacing: .005rem;
+    &:before {
+      transition: .3s;
+      font-family: FontAwesome;
+      content: "\f053";
+      position: relative;
+      top: 50px;
+    }    
+    &:hover:before {
+      margin-right: 15px;
+      top: 4px;      
+    }
+  }
+}
+
+.homepage-header {
+  padding-top: 2rem;
+  background: $red;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  @media screen and (min-width: 465px) {  
+    text-align: left;
+  }
+  &-profile {
+    @media screen and (min-width: 465px) {
+      float: left;
+      margin-right: 2rem; 
+    }    
+  }
+  &-intro p {
+    font-size: modular-scale(1rem, 2, $major-third);
+    padding-bottom: 2rem;
+  }
+}

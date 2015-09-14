@@ -1,0 +1,32 @@
+<footer>
+  <div class="container">
+    <ul class="footer-links">
+      <h3 class="footer-heading">i'm around:</h3>
+      <li><a href="mailto:matt@processyellow.ca"><i class="fa fa-envelope"></i>email</a></li>
+      <li><a href="//twitter.com/mmatthewlyle"><i class="fa fa-twitter"></i>twitter</a></li>
+      <li><a href="//dribbble.com/matthewlyle"><i class="fa fa-dribbble"></i>dribbble</a></li>
+      <!-- <li><a href="#"><i class="fa fa-phone"></i>telephone</a></li> -->
+    </ul>
+  </div>
+</footer>
+
+{% bundle %}
+- /js/jquery.js
+- /js/vendor/appear.js
+- /js/vendor/slick.js
+- /js/scripts.js
+{% endbundle %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/1.4.3.1/jquery.fluidbox.min.js"></script>
+
+<script>
+$(function () {
+    $('.gallery-lightbox-image').fluidbox({
+    	immediateOpen: true
+    });
+});
+</script>
+
+</body>
+
+</html>

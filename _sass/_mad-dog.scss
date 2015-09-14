@@ -1,0 +1,153 @@
+$mad-dog-responsive-background: #E5EBF0;
+
+html, body {
+  height: 100%;
+}
+
+.mad-dog {
+  max-width: 700px;
+  margin: 0 auto;  
+  padding: 5rem 2rem;
+  @media screen and (min-width: 650px) {padding: 5rem;}
+  @media screen and (min-width: 1325px) {padding: 5rem 0;}
+  @media screen and (min-width: 925px) {
+    max-width: 100%;
+    margin: 0;
+  }  
+  h2 {
+    text-align: center;
+    @media screen and (min-width: 925px) {
+      text-align: none;
+    }
+  }
+}
+
+.mad-dog-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  h1 {
+    margin-top: 0;
+  }
+}
+
+.mad-dog-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+  @media screen and (min-width: 925px) {  
+    max-width: 40%;
+    float: left;    
+    margin-bottom: 0;
+  }
+}
+
+.mad-dog-browser {
+  height: 300px;
+  @media screen and (min-width: 925px) {
+    float: right;
+    width: 55%;    
+    height: 500px;    
+  }
+  img {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    // -webkit-animation-name: mymove; 
+    // -webkit-animation-duration: 10s;
+    // -webkit-animation-delay: 2s;
+    // -webkit-animation-fill-mode: forwards;
+  }  
+}
+
+.mad-dog-phone {
+  background: #fff;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 500px;
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+  img.phone-scroll {
+    -webkit-animation-name: phone-scroll; 
+    -webkit-animation-timing-function: cubic-bezier(0.780, -0.320, 0.000, 1.065);
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-fill-mode: forwards;     
+  }  
+}
+
+.mad-dog-wordpress {
+    padding-top: 5rem; // no margin on container above due to height 100%
+}
+
+.mad-dog-wordpress-intro {
+  @media screen and (min-width: 930px) {
+    max-width: 40%;
+    float: left;   
+  }
+  font-size: .95rem;
+  h2 {
+    margin-top: 0;
+  }
+  img {
+    padding: 2rem;
+    float: none;      
+    display: block;
+    margin: 0 auto;      
+    max-width: 350px;   
+    display: none; 
+    @media screen and (min-width: 930px) {
+      display: block;
+    }
+  }
+}
+
+.mad-dog-wordpress-admin {
+  @media screen and (min-width: 930px) {  
+    max-width: 55%;
+    float: right;
+  }
+}
+
+.mad-dog-wordpress-admin-image {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 15px 15px 0px rgba(202, 202, 202, 0.5);  
+}
+
+.mad-dog {
+  .gallery-lightbox-image img {
+    display: block;
+    margin-bottom: 1.5rem;
+    @media screen and (min-width: 925px) {
+      max-width: 33%;
+      height: auto;
+      float: left;   
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      opacity: .9;
+    }
+  }  
+}
+
+
+
+.mad-dog-responsive {
+  background: $mad-dog-responsive-background;
+  padding: 2rem;
+  position: relative;
+}
+
+@-webkit-keyframes mymove {
+    0% {top: 40px;}
+    70% {top: -600px;}
+    100% {top: 40px;}
+} 
+
+
+@-webkit-keyframes phone-scroll {
+    0% {transform: translateY(0);}
+    70% {transform: translateY(-1000px);}
+    100% {transform: translateY(0);}
+} 

@@ -1,0 +1,9 @@
+.updated {
+  border-left: 5px solid #7f8c8d;
+  padding: modular-scale(1rem, 1, $major-third);
+  margin-left: modular-scale(1rem, 0, $major-third);
+  font-style: italic;
+  p {
+    margin: 0;
+  }
+}

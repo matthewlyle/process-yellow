@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Colophon"
+date:   2015-03-21 00:26:20
+categories:  
+---
+
+This site is hosted on an Ubuntu <a href="https://www.digitalocean.com/?refcode=81ec72b104b3">Digital Ocean</a> box and was created using <a href="//jekyllrb.com/">Jekyll</a>. The code is availabe on <a href="http://github.com/matthewlyle/process-yellow">github</a>.
+
+The body font is <a href="//www.rosettatype.com/Skolar">Skolar</a> and the headings are <a href="http://www.hvdfonts.com/">Brandon Grotesque</a>, both served from <a href="//typekit.com/">Typekit</a>.
+
+The icons on the homepage are from <a href="//tympanus.net/codrops/2014/10/27/freebie-ballicons-2-vol-2/">PixelBuddha</a> and other icons around the site are from <a href="http://fortawesome.github.io/Font-Awesome/">fontAwesome</a>. 
+
+
+

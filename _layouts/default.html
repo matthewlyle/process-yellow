@@ -1,0 +1,53 @@
+{% include head.html %}
+
+<a href="javascript:void(0)" class="responsiveNavTrigger"><span><i class="fa fa-th-list"></i>Menu</span></a>
+
+<main class="homepage">
+
+  <section class="homepage-header">
+    <div class="container">
+      <div class="welcome s-blog">
+        <a href="/ "><img src="/img/profile.png" class="homepage-header-profile" /></a>
+        <div class="homepage-header-intro">
+        <p>
+          My name is Matt. I'm a designer and front-end developer. I live in Toronto. Those are facts. 
+          I've worked with non-profits and government agencies, start-ups, small-businesses and contracted for digital agencies. I really like cats.</p>
+        </div>
+      </div>
+      <div class="link-grid">
+      <!-- icons from: http://tympanus.net/codrops/2014/10/27/freebie-ballicons-2-vol-2/ -->
+        <a href="javascript:void(0)" class="col slide0 active">
+          <img src="/img/png/@2x/flat/tie.png" alt=""><span>Work</span></a>
+        </a href="javascript:void(0)">      
+        <a href="javascript:void(0)" class="col slide1">
+          <img src="/img/png/@2x/flat/workspace.png" alt=""><span>Blog</span></a>
+        </a href="javascript:void(0)">       
+        <a href="javascript:void(0)" class="col slide2">     
+          <img src="/img/png/@2x/flat/tower.png" alt=""> <span>Contact</span></a>
+        </a href="javascript:void(0)">       
+      </div>
+    </div>
+  </section>
+
+  <section id="slider">
+    {% include portfolio.html %}        
+    {% include blog.html %} 
+    <div class="for-contact-slide-effect"></div>
+  </section>
+
+</main>
+
+<style>
+/* 
+  to-do: add body class and move this style to stylesheet
+*/
+.site-header a:before {
+  content: "";
+}
+</style>
+
+{% include mobile-menu.html %}      
+
+
+{% include footer.html %}      
+

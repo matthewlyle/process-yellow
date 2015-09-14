@@ -1,0 +1,78 @@
+footer {
+  background: $blue;
+  color: #fff;
+  padding: modular-scale(1rem, 1, $major-third) 0; 	
+  @media screen and (min-width: 500px) {
+    padding: modular-scale(1rem, 5, $major-third) 0; 
+  }    
+  a {
+    color: #fff;
+  }
+}
+
+.footer-links {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "brandon-grotesque-1","brandon-grotesque-2"; 
+  a {
+    display: block;
+    &:hover {
+      -webkit-animaton: spin 0.5s infinite;
+    }
+  }
+  li {
+    margin-bottom: 10px;
+    font-size: .9rem;
+    @media screen and (min-width: 701px) {
+      font-size: modular-scale(1rem, -1, $major-third);
+    }
+    font-weight: bold;
+    text-transform: uppercase;
+    @media screen and (min-width: 500px) {
+
+    }
+    i {
+      margin-right: 10px;
+    }
+  }
+
+  @media screen and (min-width: 500px) {    
+    text-align: right;   
+    .footer-heading {
+      margin: 0;
+    }
+    li {
+      display: inline;
+      margin-right: 20px;  
+      margin-bottom: 0;        
+      &:last-child {
+        margin-right: 0;
+      }
+    } 
+    a {
+      display: inline;
+    }       
+  } 
+   
+}
+
+.spin {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;    
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
